@@ -141,7 +141,7 @@ func AzureVMReapplySpec(ctx context.Context, inputGetter func() AzureVMReapplySp
 	const (
 		testExtPublisher = "Microsoft.CPlat.Core"
 		testExtType      = "RunCommandHandlerLinux"
-		testExtVersion   = "1.3.30"
+		testExtVersion   = "1.17.0"
 	)
 	extListResult, err := vmExtClient.List(ctx, resourceGroup, vmName, nil)
 	Expect(err).NotTo(HaveOccurred())
